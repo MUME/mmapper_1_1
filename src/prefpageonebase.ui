@@ -1,0 +1,329 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>PrefPageOneBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>PrefPageOneBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>482</width>
+            <height>692</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame" row="0" column="0">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Remote server:</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>m_remoteName</cstring>
+                    </property>
+                </widget>
+                <widget class="QSpinBox" row="1" column="2">
+                    <property name="name">
+                        <cstring>m_remotePort</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>10000</number>
+                    </property>
+                </widget>
+                <widget class="QSpinBox" row="2" column="2">
+                    <property name="name">
+                        <cstring>m_localPort</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>10000</number>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Remote port number:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Local port number:</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <spacer row="6" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>40</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QFrame" row="5" column="0">
+            <property name="name">
+                <cstring>frame5</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QSpinBox" row="1" column="1">
+                    <property name="name">
+                        <cstring>m_canvasHeight</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>100000</number>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>textLabel2_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Canvas area height:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Canvas area width:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>m_canvasWidth</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>100000</number>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="4" column="0">
+            <property name="name">
+                <cstring>frame4</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>logFileName</cstring>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>logCheck</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Log to the file:</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>autoLoadCheck</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Auto load world:</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="2">
+                    <property name="name">
+                        <cstring>autoLoadFileName</cstring>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="3" column="0">
+            <property name="name">
+                <cstring>frame8</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>syncDepthLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Auto Sync Depth:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox" row="2" column="2">
+                    <property name="name">
+                        <cstring>syncDepth</cstring>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>autoSync</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Room Auto Sync</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="0">
+                    <property name="name">
+                        <cstring>brief</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Brief mode</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="2" column="0">
+            <property name="name">
+                <cstring>frame7</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox" row="0" column="0">
+                    <property name="name">
+                        <cstring>drawNotMappedExits</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Draw not mapped exits</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>updated</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Show non updated rooms</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="1" column="0">
+            <property name="name">
+                <cstring>frame6</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox" row="0" column="0">
+                    <property name="name">
+                        <cstring>autoRoomCreate</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Room Auto Create</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>autoUpdate</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Room Auto Update</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<tabstops>
+    <tabstop>m_remoteName</tabstop>
+    <tabstop>m_remotePort</tabstop>
+    <tabstop>m_localPort</tabstop>
+    <tabstop>autoRoomCreate</tabstop>
+    <tabstop>autoUpdate</tabstop>
+    <tabstop>drawNotMappedExits</tabstop>
+    <tabstop>updated</tabstop>
+    <tabstop>brief</tabstop>
+    <tabstop>autoSync</tabstop>
+    <tabstop>syncDepth</tabstop>
+    <tabstop>autoLoadCheck</tabstop>
+    <tabstop>autoLoadFileName</tabstop>
+    <tabstop>logCheck</tabstop>
+    <tabstop>logFileName</tabstop>
+    <tabstop>m_canvasWidth</tabstop>
+    <tabstop>m_canvasHeight</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

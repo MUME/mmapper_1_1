@@ -1,0 +1,78 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui version="1" name="mmapper" >
+ <MenuBar>
+  <Menu name="edit" >
+  <text>&amp;Edit</text>
+    <Action name="room_delete" />
+    <Separator/>
+    <Action name="new_north" />
+    <Action name="new_south" />
+    <Action name="new_east" />
+    <Action name="new_west" />
+    <Separator/>
+    <Action name="disconnect_north" />
+    <Action name="disconnect_south" />
+    <Action name="disconnect_east" />
+    <Action name="disconnect_west" />
+    <Separator/>
+    <Action name="move_north" />
+    <Action name="move_south" />
+    <Action name="move_east" />
+    <Action name="move_west" />
+  </Menu>
+  <Menu name="settings" >
+   <text>&amp;Settings</text>
+   <Action name="showstatusbar" />
+   <Action name="showlogview" />
+   <Action name="configure_keys" />
+   <Action name="showtoolbar1" />
+   <Action name="showtoolbar2" />
+   <Action name="showtoolbar3" />
+   <Action name="showtoolbar4" />
+  </Menu>
+  <Menu name="mode" ><text>&amp;Mode</text>
+    <Action name="follow_mode" />
+    <Action name="edit_mode" />
+    <Action name="play_mode" />
+  </Menu>
+  
+ </MenuBar>
+ <ToolBar position="top" hidden="false" name="toolsToolBar" >
+  <Text>Tools</Text>
+  <Action name="reparse_descriptions" />
+  <Action name="redraw_world" />
+  <Separator/>
+  <Action name="zoomin" />
+  <Action name="zoomout" />
+ </ToolBar>  
+ <ToolBar position="flat" hidden="false" name="editToolBar" >
+  <Text>Edit</Text>
+  <Action name="room_delete" />
+  <Separator/>
+  <Action name="disconnect_north" />
+  <Action name="disconnect_south" />
+  <Action name="disconnect_east" />
+  <Action name="disconnect_west" />
+  <Separator/>
+  <Action name="new_north" />
+  <Action name="new_south" />
+  <Action name="new_east" />
+  <Action name="new_west" />
+  <Separator/>
+  <Action name="move_north" />
+  <Action name="move_south" />
+  <Action name="move_east" />
+  <Action name="move_west" />
+ </ToolBar>
+ <ToolBar position="right" hidden="false" noMerge="1" name="modeToolBar" >
+  <Text>Game Mode</Text>
+  <Action name="follow_mode" />
+  <Action name="edit_mode" />
+  <Action name="play_mode" />
+ </ToolBar>
+ <ToolBar position="top" hidden="false" name="mainToolBar" >
+  <Text>Main Toolbar</Text>
+  <Separator/>
+  <Action name="preferences" />
+ </ToolBar>
+</kpartgui>

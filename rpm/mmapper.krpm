@@ -1,0 +1,23 @@
+[General]
+BuildRoot=%{_tmppath}/build-root-%{name}
+CFLAGS=$RPM_OPT_FLAGS
+CXXFLAGS=$RPM_OPT_FLAGS
+Configure=--prefix=%{prefix}
+Copyright=Freeware
+Description=MMapper is an graphical MUD mapper specially designed for\nMUME online game, which is available at fire.pvv.org\n(port 4242). It works as proxy, which stands betwen game\nserver and text based client (telnet or any other mud\nclient with some extra functionality).
+Distribution=SuSE Linux 8.2
+Files=
+Group=Applications/Internet
+Name=mmapper
+Packager=M. Krejza
+Patch=
+Prefix=/opt/kde3
+Provides=
+Release=1
+Requires=qt3 >= 3.1, kdebase3 >=3.1, kdelibs3 >= 3.1
+SPEC=/home/krejza/work/mmapper/rpm/rpmbuilder/mmapper-0.0.1.spec
+Source=%{name}-%{version}.tar.gz
+Summary=MMapper - MUME (fire.pvv.org 4242) graphic mapper.
+Url=http://mmapper.czechian.net
+Vendor=
+Version=0.0.1

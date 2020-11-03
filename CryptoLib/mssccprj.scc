@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[cryptlib.vcproj]
+SCC_Aux_Path = "\\Netserver-e200\VSS_TunnelMap\"
+SCC_Project_Name = "$/TunnelMap/Implementation/CryptoLib", NURAAAAA

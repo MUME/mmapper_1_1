@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="mmapper"
+	ProjectGUID="{524B60A6-F64D-424B-82FE-F9F68FF9012A}"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".;$(QTDIR)/include;Generated;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmain.lib qt-mt334.lib"
+				OutputFile="$(OutDir)/mmapper.exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(QTDIR)\lib.DEBUG\"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/mmapper.pdb"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".;$(QTDIR)/include;Generated;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qtmain.lib qt-mt334.lib"
+				OutputFile="$(OutDir)/mmapper.exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(QTDIR)\lib.release"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath=".\CanvasImage.cpp">
+			</File>
+			<File
+				RelativePath="clientsocket.cpp">
+			</File>
+			<File
+				RelativePath="commandeval.cpp">
+			</File>
+			<File
+				RelativePath=".\ContextHelper.cpp">
+			</File>
+			<File
+				RelativePath=".\HelpWindow.cpp">
+			</File>
+			<File
+				RelativePath="main.cpp">
+			</File>
+			<File
+				RelativePath="mapcanvas.cpp">
+			</File>
+			<File
+				RelativePath="mapcanvasview.cpp">
+			</File>
+			<File
+				RelativePath="mapdata.cpp">
+			</File>
+			<File
+				RelativePath="mmapper.cpp">
+			</File>
+			<File
+				RelativePath="mmapperlogview.cpp">
+			</File>
+			<File
+				RelativePath="pref.cpp">
+			</File>
+			<File
+				RelativePath="proxyserver.cpp">
+			</File>
+			<File
+				RelativePath="roomeditdialogimpl.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="ansi.h">
+			</File>
+			<File
+				RelativePath=".\CanvasImage.h">
+			</File>
+			<File
+				RelativePath=".\ContextHelper.h">
+			</File>
+			<File
+				RelativePath="defs.h">
+			</File>
+			<File
+				RelativePath=".\resource.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=""
+						CommandLine=""
+						Outputs=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=""
+						CommandLine=""
+						Outputs=""/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="roomeditdialog.ui.h">
+			</File>
+			<Filter
+				Name="MOCed headers"
+				Filter="">
+				<File
+					RelativePath="clientsocket.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="commandeval.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\HelpWindow.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mapcanvas.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mapcanvasview.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mapdata.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mmapper.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mmapperlogview.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="pref.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="proxyserver.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="roomeditdialogimpl.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							Description="MOC ing $(InputFileName)"
+							CommandLine="$(QTDIR)\bin\moc.exe $(InputPath) -o Generated\moc_$(InputName).cpp
+"
+							Outputs="Generated\moc_$(InputName).cpp"/>
+					</FileConfiguration>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File
+				RelativePath=".\mmapper-big.ico">
+			</File>
+			<File
+				RelativePath=".\mmapper.rc">
+			</File>
+			<File
+				RelativePath="mmapperui.rc">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCResourceCompilerTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCResourceCompilerTool"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="">
+			<File
+				RelativePath="prefpageonebase.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="prefpagetwobase.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="roomeditdialog.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UICing  $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\uic.exe $(InputPath) -o Generated\$(InputName).h
+$(QTDIR)\bin\uic.exe $(InputPath) -i $(InputName).h -o Generated\$(InputName).cpp
+$(QTDIR)\bin\moc.exe Generated\$(InputName).h -o Generated\moc_$(InputName).cpp
+"
+						Outputs="Generated\$(InputName).h;Generated\$(InputName).cpp;Generated\moc_$(InputName).cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated"
+			Filter="">
+			<File
+				RelativePath=".\generated\moc_clientsocket.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_commandeval.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_HelpWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_mapcanvas.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_mapcanvasview.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_mapdata.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_mmapper.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_mmapperlogview.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_pref.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_prefpageonebase.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_prefpagetwobase.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_proxyserver.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_resource.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_roomeditdialog.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\moc_roomeditdialogimpl.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\prefpageonebase.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\prefpageonebase.h">
+			</File>
+			<File
+				RelativePath=".\generated\prefpagetwobase.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\prefpagetwobase.h">
+			</File>
+			<File
+				RelativePath=".\generated\roomeditdialog.cpp">
+			</File>
+			<File
+				RelativePath=".\generated\roomeditdialog.h">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

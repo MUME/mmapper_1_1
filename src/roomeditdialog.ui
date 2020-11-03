@@ -1,0 +1,3610 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>RoomEditDialog</class>
+<author>Marek Krejza</author>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>RoomEditDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>404</width>
+            <height>620</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>4</hsizetype>
+            <vsizetype>4</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>404</width>
+            <height>620</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>404</width>
+            <height>620</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>404</width>
+            <height>620</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Room edit dialog</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>false</bool>
+    </property>
+    <hbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>4</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>380</width>
+                    <height>611</height>
+                </size>
+            </property>
+            <property name="tabPosition">
+                <enum>Top</enum>
+            </property>
+            <property name="tabShape">
+                <enum>Rounded</enum>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Create</string>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame16</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>320</y>
+                            <width>360</width>
+                            <height>241</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QFrame">
+                        <property name="name">
+                            <cstring>roomFrame_3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>150</x>
+                                <y>100</y>
+                                <width>70</width>
+                                <height>60</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>WinPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Plain</enum>
+                        </property>
+                        <property name="lineWidth">
+                            <number>1</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>connectToButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>10</y>
+                                    <width>50</width>
+                                    <height>40</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>To</string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>false</bool>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>labConnectTo</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>67</x>
+                                <y>17</y>
+                                <width>223</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Destination Room Connect To:</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToEastButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>110</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from east</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToSouthButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>160</x>
+                                <y>170</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from south</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToDownButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>170</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from down</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToWestButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>90</x>
+                                <y>110</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from west</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToNorthButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>160</x>
+                                <y>50</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from north</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectToUpButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>90</x>
+                                <y>50</y>
+                                <width>50</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>To</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Connection from upper</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>connectionsFrame</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>360</width>
+                            <height>300</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>newEastButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>240</x>
+                                <y>110</y>
+                                <width>90</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>New Room</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectEastButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>240</x>
+                                <y>140</y>
+                                <width>90</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Connect</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectEastButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>240</x>
+                                <y>170</y>
+                                <width>90</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectDownButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>250</x>
+                                <y>210</y>
+                                <width>80</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Connect
+Down</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectDownButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>250</x>
+                                <y>250</y>
+                                <width>80</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect
+Down</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectSouthButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>260</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QFrame">
+                        <property name="name">
+                            <cstring>roomFrame</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>150</x>
+                                <y>115</y>
+                                <width>80</width>
+                                <height>80</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>WinPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Plain</enum>
+                        </property>
+                        <property name="lineWidth">
+                            <number>1</number>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectNorthButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>80</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectNorthButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>50</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Connect</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>newNorthButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>20</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>New Room</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>newWestButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>40</x>
+                                <y>110</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="backgroundOrigin">
+                            <enum>WidgetOrigin</enum>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>New Room</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectWestButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>40</x>
+                                <y>140</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="backgroundOrigin">
+                            <enum>WidgetOrigin</enum>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Connect</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectWestButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>40</x>
+                                <y>170</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>disconnectUpButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>50</x>
+                                <y>60</y>
+                                <width>80</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Disconnect
+Up</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectSouthButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>230</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>Connect</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>newSouthButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>140</x>
+                                <y>200</y>
+                                <width>100</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="cursor">
+                            <cursor>0</cursor>
+                        </property>
+                        <property name="text">
+                            <string>New Room</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>roomDeleteButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>260</y>
+                                <width>70</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Delete</string>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>roomCreateButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>220</y>
+                                <width>70</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Create</string>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>connectUpButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>50</x>
+                                <y>20</y>
+                                <width>80</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Connect
+Up</string>
+                        </property>
+                        <property name="toggleButton">
+                            <bool>false</bool>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Connections</string>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabelConnection_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>124</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Connection type:</string>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame18</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>400</y>
+                            <width>370</width>
+                            <height>177</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_6_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>146</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Down</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_5_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>120</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Up</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_2_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>40</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>South</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_3_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>66</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>East</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_4_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>94</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>West</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorSouthEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>37</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorEastEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>64</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorWestEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>91</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorUpEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>118</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorDownEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>145</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hiden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorSouthType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>35</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorEastType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>62</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorWestType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>90</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorUpType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>117</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorDownType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>144</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Normal</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Need Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hidden+Key</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>doorNorthType</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>8</y>
+                                <width>130</width>
+                                <height>29</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>doorNorthEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>10</y>
+                                <width>130</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_7</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>13</y>
+                                <width>50</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>North</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frameRoomAttributes_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>20</y>
+                            <width>370</width>
+                            <height>380</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>westBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>130</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>West</string>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedW</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>67</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedW</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>87</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedWt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>67</y>
+                                    <width>61</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedWt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>90</y>
+                                    <width>61</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionWestType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>20</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>upBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>180</x>
+                                <y>10</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>Up</string>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedU</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>30</x>
+                                    <y>70</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedU</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>30</x>
+                                    <y>90</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedUt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>50</x>
+                                    <y>70</y>
+                                    <width>61</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedUt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>50</x>
+                                    <y>90</y>
+                                    <width>50</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionUpType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>20</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>downBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>250</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>Down</string>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedD</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>70</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedD</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>90</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionDownType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>20</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedDt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>70</y>
+                                    <width>61</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedDt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>90</y>
+                                    <width>40</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>southBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>50</x>
+                                <y>250</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>South</string>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedS</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>90</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedS</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>70</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionSouthType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>20</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedSt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>90</y>
+                                    <width>40</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedSt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>70</y>
+                                    <width>70</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>northBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>40</x>
+                                <y>10</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>North</string>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedN</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>70</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedN</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>90</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedNt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>70</y>
+                                    <width>61</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedNt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>90</y>
+                                    <width>40</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionNorthType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>17</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>eastBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>220</x>
+                                <y>130</y>
+                                <width>140</width>
+                                <height>115</height>
+                            </rect>
+                        </property>
+                        <property name="title">
+                            <string>East</string>
+                        </property>
+                        <widget class="QListBox">
+                            <item>
+                                <property name="text">
+                                    <string>Door</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Climb</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>connectionEastType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>20</y>
+                                    <width>115</width>
+                                    <height>45</height>
+                                </rect>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>onewayLedE</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>70</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>loopLedE</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>90</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>onewayLedEt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>70</y>
+                                    <width>61</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Oneway</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>loopLedEt</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>40</x>
+                                    <y>90</y>
+                                    <width>61</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Loop</string>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Room Attr</string>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel4_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>270</y>
+                            <width>78</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Attributes:</string>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame15</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>7</x>
+                            <y>7</y>
+                            <width>360</width>
+                            <height>260</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>60</y>
+                                <width>132</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Room Description:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>10</y>
+                                <width>94</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Room Name:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>roomNameEdit</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>30</y>
+                                <width>340</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QTextEdit">
+                        <property name="name">
+                            <cstring>roomDescEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>80</y>
+                                <width>340</width>
+                                <height>170</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>LineEditPanel</enum>
+                        </property>
+                        <property name="lineWidth">
+                            <number>2</number>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="midLineWidth">
+                            <number>0</number>
+                        </property>
+                        <property name="textFormat">
+                            <enum>PlainText</enum>
+                        </property>
+                        <property name="wordWrap">
+                            <enum>NoWrap</enum>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frameRoomAttributes_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>290</y>
+                            <width>360</width>
+                            <height>270</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelLoad_3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>20</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Load type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelMob_3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>80</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Mob type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelTerrain_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>140</y>
+                                <width>93</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Terrain type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelMob_3_2_2_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>200</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Align:</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>checkBoxIndoor</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>70</y>
+                                <width>70</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Indoor</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Good</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Neutral</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Evil</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>alignType</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>220</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>none</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Peacefull</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Aggresive</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Quest</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Shop</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Rent</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Guild</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>mobType</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>100</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>none</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Treasure</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Herb</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Watter</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Food</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Horse</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Warg</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Tower</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Attention</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Boat</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>loadType</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>40</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>checkBoxPortable</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>40</y>
+                                <width>90</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Portable</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>checkBoxDark</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>100</y>
+                                <width>60</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Dark</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>checkExits</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>230</x>
+                                <y>190</y>
+                                <width>105</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Check exits:</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Indoors</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>City</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Field</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Forest</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hills</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Mountains</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Shallow Water</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Water</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Rapids</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Underwater</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Road</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Brush</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Tunnel</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Cavern</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Death Trap</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Random</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>terrainType</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>160</y>
+                                <width>160</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Modify</string>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frameRoomAttributes_4</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>360</width>
+                            <height>350</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelMob_3_2_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>210</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Align:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelMob_3_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>150</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Mob type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelTerrain_4_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>280</y>
+                                <width>93</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Dark/Lit:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel_1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>10</y>
+                                <width>93</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Terrain type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>10</y>
+                                <width>114</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Indoor/Outdoor:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelTerrain_4_2_2_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>80</y>
+                                <width>114</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Port/Noport:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabelLoad_3_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>80</y>
+                                <width>78</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Load type:</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>none</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Peacefull</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Aggresive</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Quest</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Shop</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Rent</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Guild</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxMob</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>170</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Good</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Neutral</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Evil</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxAlign</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>230</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Dark</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Lit</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxDark</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>300</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Portable</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Not portable</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxPortable</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>100</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Indoor</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Outdoor</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxIndoor</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>none</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Treasure</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Herb</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Key</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Watter</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Food</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Horse</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Warg</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Tower</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Attention</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Boat</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxLoad</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>100</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Dont modify</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Indoors</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>City</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Field</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Forest</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Hills</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Mountains</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Shallow Water</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Water</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Rapids</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Underwater</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Road</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Brush</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Tunnel</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Cavern</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Death Trap</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Random</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxTerrain</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>33</height>
+                            </rect>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Info marks</string>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame12</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>7</x>
+                            <y>7</y>
+                            <width>361</width>
+                            <height>560</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>10</y>
+                                <width>211</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Create/modify map info mark:</string>
+                        </property>
+                    </widget>
+                    <widget class="QFrame">
+                        <property name="name">
+                            <cstring>frame13</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>30</y>
+                                <width>340</width>
+                                <height>520</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Raised</enum>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel4_3_2_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>370</y>
+                                    <width>24</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Y2</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel4_3_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>330</y>
+                                    <width>24</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>X2</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel4_3_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>110</x>
+                                    <y>370</y>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Y1</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel3_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>290</y>
+                                    <width>70</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Position:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>220</y>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Text:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2_2_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>160</y>
+                                    <width>98</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Object name:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>90</y>
+                                    <width>90</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Object type:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>10</x>
+                                    <y>19</y>
+                                    <width>202</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Objects near selected room:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel4_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>110</x>
+                                    <y>330</y>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>X1</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>endLabel</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>260</x>
+                                    <y>310</y>
+                                    <width>70</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>End</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>objectModify</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>130</x>
+                                    <y>450</y>
+                                    <width>90</width>
+                                    <height>33</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Modify</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>objectDelete</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>230</x>
+                                    <y>450</y>
+                                    <width>90</width>
+                                    <height>33</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Delete</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>objectCreate</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>30</x>
+                                    <y>450</y>
+                                    <width>90</width>
+                                    <height>33</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Create</string>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>Text mark</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Line</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Arrow</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>objectType</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>140</x>
+                                    <y>90</y>
+                                    <width>190</width>
+                                    <height>33</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>objectText</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>70</x>
+                                    <y>220</y>
+                                    <width>260</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>objectName</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>130</x>
+                                    <y>160</y>
+                                    <width>200</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>Create New object</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>objects</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>90</x>
+                                    <y>39</y>
+                                    <width>240</width>
+                                    <height>33</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>startLabel</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>140</x>
+                                    <y>310</y>
+                                    <width>70</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Start</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>startLabel_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>140</x>
+                                    <y>290</y>
+                                    <width>70</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>From:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>startLabel_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>260</x>
+                                    <y>290</y>
+                                    <width>70</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>To</string>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>objectX2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>260</x>
+                                    <y>330</y>
+                                    <width>70</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="maxValue">
+                                <number>100000</number>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>objectY2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>260</x>
+                                    <y>370</y>
+                                    <width>70</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="maxValue">
+                                <number>100000</number>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>objectY1</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>140</x>
+                                    <y>370</y>
+                                    <width>70</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="maxValue">
+                                <number>100000</number>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>objectX1</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>140</x>
+                                    <y>330</y>
+                                    <width>70</width>
+                                    <height>25</height>
+                                </rect>
+                            </property>
+                            <property name="maxValue">
+                                <number>100000</number>
+                            </property>
+                        </widget>
+                    </widget>
+                </widget>
+            </widget>
+        </widget>
+    </hbox>
+</widget>
+<tabstops>
+    <tabstop>tab</tabstop>
+    <tabstop>connectUpButton</tabstop>
+    <tabstop>disconnectUpButton</tabstop>
+    <tabstop>newNorthButton</tabstop>
+    <tabstop>connectNorthButton</tabstop>
+    <tabstop>disconnectNorthButton</tabstop>
+    <tabstop>newWestButton</tabstop>
+    <tabstop>connectWestButton</tabstop>
+    <tabstop>disconnectWestButton</tabstop>
+    <tabstop>newEastButton</tabstop>
+    <tabstop>connectEastButton</tabstop>
+    <tabstop>disconnectEastButton</tabstop>
+    <tabstop>roomCreateButton</tabstop>
+    <tabstop>roomDeleteButton</tabstop>
+    <tabstop>newSouthButton</tabstop>
+    <tabstop>connectSouthButton</tabstop>
+    <tabstop>disconnectSouthButton</tabstop>
+    <tabstop>connectDownButton</tabstop>
+    <tabstop>disconnectDownButton</tabstop>
+    <tabstop>connectToUpButton</tabstop>
+    <tabstop>connectToNorthButton</tabstop>
+    <tabstop>connectToWestButton</tabstop>
+    <tabstop>connectToButton</tabstop>
+    <tabstop>connectToEastButton</tabstop>
+    <tabstop>connectToSouthButton</tabstop>
+    <tabstop>connectToDownButton</tabstop>
+    <tabstop>connectionNorthType</tabstop>
+    <tabstop>onewayLedN</tabstop>
+    <tabstop>loopLedN</tabstop>
+    <tabstop>connectionUpType</tabstop>
+    <tabstop>onewayLedU</tabstop>
+    <tabstop>loopLedU</tabstop>
+    <tabstop>connectionWestType</tabstop>
+    <tabstop>onewayLedW</tabstop>
+    <tabstop>loopLedW</tabstop>
+    <tabstop>connectionEastType</tabstop>
+    <tabstop>onewayLedE</tabstop>
+    <tabstop>loopLedE</tabstop>
+    <tabstop>connectionSouthType</tabstop>
+    <tabstop>onewayLedS</tabstop>
+    <tabstop>loopLedS</tabstop>
+    <tabstop>connectionDownType</tabstop>
+    <tabstop>onewayLedD</tabstop>
+    <tabstop>loopLedD</tabstop>
+    <tabstop>doorNorthEdit</tabstop>
+    <tabstop>doorNorthType</tabstop>
+    <tabstop>doorSouthEdit</tabstop>
+    <tabstop>doorSouthType</tabstop>
+    <tabstop>doorEastEdit</tabstop>
+    <tabstop>doorEastType</tabstop>
+    <tabstop>doorWestEdit</tabstop>
+    <tabstop>doorWestType</tabstop>
+    <tabstop>doorUpEdit</tabstop>
+    <tabstop>doorUpType</tabstop>
+    <tabstop>doorDownEdit</tabstop>
+    <tabstop>doorDownType</tabstop>
+    <tabstop>roomNameEdit</tabstop>
+    <tabstop>roomDescEdit</tabstop>
+    <tabstop>loadType</tabstop>
+    <tabstop>mobType</tabstop>
+    <tabstop>terrainType</tabstop>
+    <tabstop>alignType</tabstop>
+    <tabstop>checkBoxPortable</tabstop>
+    <tabstop>checkBoxIndoor</tabstop>
+    <tabstop>checkBoxDark</tabstop>
+    <tabstop>checkExits</tabstop>
+    <tabstop>comboBoxTerrain</tabstop>
+    <tabstop>comboBoxLoad</tabstop>
+    <tabstop>comboBoxMob</tabstop>
+    <tabstop>comboBoxAlign</tabstop>
+    <tabstop>comboBoxDark</tabstop>
+    <tabstop>comboBoxIndoor</tabstop>
+    <tabstop>comboBoxPortable</tabstop>
+    <tabstop>objects</tabstop>
+    <tabstop>objectType</tabstop>
+    <tabstop>objectName</tabstop>
+    <tabstop>objectText</tabstop>
+    <tabstop>objectX1</tabstop>
+    <tabstop>objectY1</tabstop>
+    <tabstop>objectX2</tabstop>
+    <tabstop>objectY2</tabstop>
+    <tabstop>objectCreate</tabstop>
+    <tabstop>objectModify</tabstop>
+    <tabstop>objectDelete</tabstop>
+</tabstops>
+<variables>
+    <variable>int mode;</variable>
+</variables>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

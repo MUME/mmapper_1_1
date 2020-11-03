@@ -1,0 +1,7 @@
+LintProject - Visual C++ Project Linting Utility version 1.2.3
+
+Copyright (c) 2004 by Riverblade Limited
+http://www.riverblade.co.uk
+
+
+Syntax: LintProject <dsp/dsw PathName> <output folder> [/f<LintFolder>]
